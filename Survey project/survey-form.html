@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homeless People Survey</title>
+  <link rel="stylesheet" href="survey-form.css">
+</head>
+<body>
+
+  <div class="survey-container">
+    <h1>Homeless People Survey</h1>
+
+    <form action="https://api.web3forms.com/submit" method="POST" class="surveyform">
+      <input type="hidden" name="access_key" value="3d8a2c8c-28ab-4630-a992-6f6c578a8c46">
+
+      <!-- Personal Information Section -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="120" placeholder="Enter your age" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </fieldset>
+
+      <!-- Living Situation Section -->
+      <fieldset>
+        <legend>Living Situation</legend>
+
+        <label>Current Living Situation:</label>
+        <input type="radio" id="homeless" name="livingSituation" value="Homeless" required>Homeless
+        <input type="radio" id="atrisk" name="livingSituation" value="At-risk">At-risk
+        <input type="radio" id="stable" name="livingSituation" value="Stable Housing">Stable Housing
+      </fieldset>
+
+      <!-- Location Section -->
+      <fieldset>
+        <legend>Location</legend>
+        <label for="location">Location (City/State):</label>
+        <input type="text" id="location" name="location" placeholder="Enter your city/state" required>
+      </fieldset>
+
+      <!-- Contact Information Section -->
+      <fieldset>
+        <legend>Contact Information</legend>
+
+        <label for="contact">Contact (Email or Phone):</label>
+        <input type="text" id="contact" name="contact" placeholder="Email or phone number" required>
+      </fieldset>
+
+      <!-- Assistance & Additional Information Section -->
+      <fieldset>
+        <legend>Assistance & Additional Information</legend>
+
+        <!-- Dependents Section -->
+        <label>Do you have any dependents?</label>
+        <input type="radio" id="dependentsYes" name="dependents" value="Yes" required>Yes
+        <input type="radio" id="dependentsNo" name="dependents" value="No">No
+
+        <!-- Assistance Program Access -->
+        <label>Have you accessed any homeless assistance programs?</label>
+        <input type="radio" id="assistanceYes" name="assistance" value="Yes" required>Yes
+        <input type="radio" id="assistanceNo" name="assistance" value="No">No
+
+        <!-- Receive Assistance Information -->
+        <label>Would you like to receive information about available assistance?</label>
+        <input type="radio" id="receiveInfoYes" name="receiveInfo" value="Yes" required>Yes
+        <input type="radio" id="receiveInfoNo" name="receiveInfo" value="No">No
+
+        <!-- Additional Comments -->
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Enter any comments"></textarea>
+      </fieldset>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="survey-form.js"></script>
+</body>
+</html>

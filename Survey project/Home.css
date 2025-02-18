@@ -1,0 +1,84 @@
+/* Reset and General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Fixed High-Contrast Multicolor Gradient Background */
+body {
+  background: linear-gradient(to right, #4b0082, #6a0dad, #8a2be2, #780574);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+/* Header Styling */
+header {
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to right, #3b0164, #8a2be2);
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Main Content */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+/* Glassmorphism Content Box */
+.content {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Button Styling */
+#start-button {
+  background: linear-gradient(45deg, #6a0dad, #da70d6);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  margin-top: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+#start-button:hover {
+  background: linear-gradient(45deg, #da70d6, #6a0dad);
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(218, 112, 214, 0.5);
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to right, #4b0082, #8a2be2);
+  color: white;
+  padding: 10px 0;
+  font-size: 14px;
+  text-align: center;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+}
